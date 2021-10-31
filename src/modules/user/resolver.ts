@@ -25,7 +25,6 @@ export default class UserResolver {
   }
 
   @Query((returns) => UserLoggedIn)
-  @UseMiddleware(isAuth)
   async login(@Arg("login") loginInput: LoginInput) {
 
     const user = await this.userService.logIn(loginInput);
