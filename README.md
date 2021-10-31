@@ -1,6 +1,6 @@
 
 
-#### Technologies used
+#### Technologies utilisées
 
 - NodeJS and TypeScript
 - GraphQL with Apollo Server and Type GraphQL
@@ -30,7 +30,7 @@
 └── tsconfig.json              # TypeScript compiler options
 ```
 
-#### Module example (Domain)
+#### Module example 
 
 ```
 .
@@ -50,6 +50,6 @@
 #### Construire et démarrer le serveur
 - Run `npm run start`
 
-#### Access to the GraphQL Playground (
+#### Access to the GraphQL Playground 
 
 - `http://localhost:5000/graphql`
