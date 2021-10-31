@@ -31,7 +31,7 @@ export default class TodoModel {
     let todo = new TodoMongooseModel(data);
     todo.user = decodedToken._id;
     await todo.populate("user").execPopulate();
-    return (await (todo.save()))._doc;
+    return (await todo.save())._doc;
   }
 
   async update(data: UpdateTodoInput): Promise<Todo | null> {
@@ -43,7 +43,7 @@ export default class TodoModel {
       throw new Error("Todo doesn't exist");
     }
 
-    return todo;
+    return todo._doc;
   }
 
   async updateStatus(data: UpdateTodoStatusInput): Promise<Todo | null> {
