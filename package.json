@@ -1,0 +1,51 @@
+{
+  "name": "AOS",
+  "version": "1.0.0",
+  "description": "A GraphQL API starter using NodeJS, TypeScript and Apollo Server",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaid4kspr/AOS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaid4kspr/AOS/issues"
+  },
+  "homepage": "https://github.com/zaid4kspr/AOS#readme",
+  "devDependencies": {
+    "@types/helmet": "0.0.46",
+    "@types/node": "^13.13.5",
+    "apollo-server-testing": "^2.13.1",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@typegoose/typegoose": "^7.0.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/body-parser": "^1.19.1",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/mongoose": "^5.7.16",
+    "apollo-server-express": "^2.13.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "class-validator": "^0.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.13",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.0.0-rc.1",
+    "typedi": "^0.8.0"
+  }
+}
