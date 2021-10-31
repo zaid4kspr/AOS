@@ -5,7 +5,6 @@
 - NodeJS and TypeScript
 - GraphQL with Apollo Server and Type GraphQL
 - MongoDB Database integrated with Mongoose/TypeGoose
-- Jest for testing
 - Docker (Not mandatory)
 
 ## Folder structure
