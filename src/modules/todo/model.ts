@@ -31,7 +31,7 @@ export default class TodoModel {
     let todo = new TodoMongooseModel(data);
     todo.user = decodedToken._id;
     await todo.populate("user").execPopulate();
-    return todo.save();
+    return (await (todo.save()))._doc;
   }
 
   async update(data: UpdateTodoInput): Promise<Todo | null> {
