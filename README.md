@@ -50,7 +50,7 @@
 - Run `npm install`
 
 #### Build and start server 
-- Run `npm start`
+- Run `npm run start`
 
 #### Access to the GraphQL Playground (Dev only)
 
