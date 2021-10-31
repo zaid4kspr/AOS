@@ -7,27 +7,26 @@
 - MongoDB Database integrated with Mongoose/TypeGoose
 - Docker (Not mandatory)
 
-## Folder structure
+## Structure des dossiers
 
 #### Overview
 
 ```
 .
-├── src                        # Where your source code lives
-│   ├── bootstrap              # Bootstrapping and loading of the API dependencies (Express, Apollo, Database, ...)
-│   ├── entities               # Used to generate typing, schemas and ORM models
-│   ├── modules                # Business logic of the app divided by domain (eg: User, Post, Todo)
-│   ├── tests                  # Where all our testing strategy lives
-│   ├── utils                  # Collection of utils function that we use in the project
-│   ├── config.ts              # Config of the app, sourced by environment variables
-│   └── index.ts               # Entry point of the API
+├── src                        # Où se trouve le code source
+│   ├── bootstrap              # Bootstrapping et chargement des dépendances de l'API (Express, Apollo, Database, ...)
+│   ├── entities               # Utilisé pour générer le typage, les schémas et les modèles ORM
+│   ├── modules                # Logique de l'application divisée par domaine (ex : Utilisateur, Comment, Todo)
+│   ├── utils                  # Collection de fonctions utiles que nous utilisons dans le projet.
+│   ├── config.ts              # Configuration de l'application, provenant des variables d'environnement.
+│   └── index.ts               # Point d'entrée de l'API
 │
 
-├── docker-compose.yml         # Docker compose configuration (Optional !)
-├── .env                       # Example of what your .env file should look like
-├── .gitignore                 # Standard gitignore file
-├── package.json               # Node module dependencies
-├── README.md                  # Simple readme file
+├── docker-compose.yml         # Docker compose configuration (Optionnel car base de données est sur mongo atlas  !)
+├── .env                       # Exemple de ce à quoi doit ressembler votre fichier .env
+├── .gitignore                 # Fichier gitignore standard
+├── package.json               # Dépendances de Node.js
+├── README.md                  # readme file
 └── tsconfig.json              # TypeScript compiler options
 ```
 
@@ -37,20 +36,20 @@
 .
 ├── src
 │   └── modules
-│       └── user               # Module name
-│           ├── input.ts       # Input validation for mutations and queries using class-validator
-│           ├── model.ts       # Database model
-│           ├── resolver.ts    # GraphQL revolver
-│           └── service.ts     # Business logic of your app
+│       └── user               # Nom du module
+│           ├── input.ts       # Validation des entrées pour les mutations et les requêtes à l'aide de class-validator
+│           ├── model.ts       # Modèle de base de données
+│           ├── resolver.ts    # Résolveur GraphQL
+│           └── service.ts     # Logique de l'application
 ```
 
 ## How to use
 
 - Run `npm install`
 
-#### Build and start server 
+#### Construire et démarrer le serveur
 - Run `npm run start`
 
-#### Access to the GraphQL Playground (Dev only)
+#### Access to the GraphQL Playground (
 
 - `http://localhost:5000/graphql`
